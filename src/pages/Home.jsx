@@ -1,23 +1,13 @@
-import CourseCard from "../components/CourseCard";
+import Hero from "../components/Hero";
+import Courses from "../components/Courses";
 
 export default function Home() {
-
   return (
-    <div className="p-10">
+    <div>
 
-      <h1 className="text-4xl font-bold mb-10">
-        Academic Learning Portal
-      </h1>
+      <Hero />
 
-      <div className="grid grid-cols-3 gap-6">
-
-        <CourseCard title="Artificial Intelligence" link="/ai" />
-
-        <CourseCard title="Software Testing" link="/testing" />
-
-        <CourseCard title="Machine Learning" link="/ml" />
-
-      </div>
+      <Courses />
 
     </div>
   );
